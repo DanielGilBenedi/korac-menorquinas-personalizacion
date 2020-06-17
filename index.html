@@ -15,7 +15,7 @@
 <body>
         
     <div class="ml-4">
-        <img src="images/ANIMAL-PRINT.gif" width="30%" style="margin-left: 33%;"></img>
+        <img src="images/animal_print/ANIMAL-PRINT.gif" width="30%" style="margin-left: 33%;"></img>
     </div>
     
 
@@ -24,49 +24,90 @@
     <div class="container">
         <div class="row">
           <div class="col-sm-3 mt-5">
-            <article class="card-group-item">
-                <header class="card-header"><h6 class="title">Zapatillas</h6></header>
-                <div class="filter-content">
-                    <div class="list-group list-group-flush">
-                      <a href="#" class="list-group-item">con lo de atras<span class="float-right badge badge-light round">142</span> </a>
-                      <a href="#" class="list-group-item">abrochadas  <span class="float-right badge badge-light round">3</span>  </a>
-                      <a href="#" class="list-group-item">velcro <span class="float-right badge badge-light round">32</span>  </a>
-                      <a href="#" class="list-group-item">atadas <span class="float-right badge badge-light round">12</span>  </a>
-                    </div>  <!-- list-group .// -->
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Tipos Menorquinas
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <ul class="list-group">
+                        <a  href="#" onclick=tobilleras() ><li id='tobilleras' class="list-group-item">Tobilleras</li>
+                        <a  href="#" id='planas' ><li class="list-group-item">Planas</li>
+                        <a  href="#" id='plataforma' ><li class="list-group-item">Plataforma</li>
+                    </ul>
+                    
+                  </div>
                 </div>
-            
-            </article>
-           
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Animal Print
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <ul class="list-group">
+                        <a  href="#" onclick=serpienteBeigue()><li class="list-group-item">Serpiente Beigue</li>
+                        <a  href="#" onclick=serpienteNegro()><li class="list-group-item">Serpiente negro</li>
+                        <a  href="#" onclick=serpiente()><li class="list-group-item">Serpiente</li>
+                        <a  href="#" onclick=leopardoBeigue()><li class="list-group-item">Leopardo Beigue</li>
+                        <a  href="#" onclick=leopardoCuero()><li class="list-group-item">Leopardo cuero</li>
+                        <a  href="#" onclick=cebra()><li class="list-group-item">Cebra</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header " id="headingThree">
+                    <h5 class="mb-0 text-center">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Glitter
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <ul class="list-group">
+                        <a  href="#"><li class="list-group-item">Champang</li></a>
+                        <a  href="#"><li class="list-group-item">Multi</li></a>
+                        <a  href="#"><li class="list-group-item">Plata</li></a>
+                        <a  href="#"><li class="list-group-item">Rosa</li></a>
+                        <a  href="#"><li class="list-group-item">Negro</li></a>
+                        <a  href="#"><li class="list-group-item">Marino</li></a>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header " id="headingFour">
+                      <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Trenza vaquetilla
+                        </button>   
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <ul class="list-group">
+                            <a  href="#"><li class="list-group-item">Beigue</li></a>
+                            <a  href="#"><li class="list-group-item">Rojo</li></a>
+                            <a  href="#"><li class="list-group-item">Ocre</li></a>
+                            <a  href="#"><li class="list-group-item">Marron</li></a>
+                            <a  href="#"><li class="list-group-item">Combi</li></a>
+                   
+                        </ul>
+                    </div>
+                  </div>
+              </div>
     
-            <article class="card-group-item">
-                <header class="card-header"><h6 class="title">Color</h6></header>
-                <div class="filter-content">
-                    <div class="card-body">
-                        <label class="btn btn-danger">
-                          <input class="" type="checkbox" name="myradio" value="">
-                          <span class="form-check-label">Rojo</span>
-                        </label>
-                        <label class="btn btn-success">
-                          <input class="" type="checkbox" name="myradio" value="">
-                          <span class="form-check-label">Verde</span>
-                        </label>
-                        <label class="btn btn-primary">
-                          <input class="" type="checkbox" name="myradio" value="">
-                          <span class="form-check-label">Azul</span>
-                        </label>
-                        <label class="btn btn-secondary">
-                            <input class="" type="checkbox" name="myradio" value="">
-                            <span class="form-check-label">Gris</span>
-                          </label>
-                    </div> <!-- card-body.// -->
-                </div>
-                </article>
           </div>
           <div class="col-sm-8 ml-5 mt-5">
             <img src="images/marronC-amarillo.jpeg" id="principal" width="100%" alt="">
-            <img src="images/marronO-amarillo.jpeg" id="secundaria" class="img-thumbnail" width="20%" alt="...">
-            <img src="images/marronO-amarillo.jpeg" id="secundaria" class="img-thumbnail" width="20%" alt="...">
-            <img src="images/marronO-azulO.jpeg" id="secundaria" class="img-thumbnail" width="20%" alt="...">
+            <img src="images/marronO-amarillo.jpeg" id="secundaria" class="img-thumbnail" onclick="cambiar('images/marronO-amarillo.jpeg')" width="20%" alt="...">
+            <img src="images/marronC-beigue.jpeg" id="secundaria" class="img-thumbnail" onclick="cambiar('images/marronC-beigue.jpeg')" width="20%" alt="...">
+            <img src="images/marronC-negro.jpeg" id="secundaria" class="img-thumbnail" onclick="cambiar('images/marronC-negro.jpeg')" width="20%" alt="...">
           </div>
          
           
@@ -86,8 +127,12 @@
      <!-- Core theme JS-->
      <script src="js/scripts.js"></script>
      <script>
-         
 
+         function cambiar(cambiar_foto)
+        {
+            document.getElementById('principal').src = cambiar_foto;
+        }
+    /*
         var i = document.getElementById("secundaria");
         
         i.addEventListener("click", function () {
@@ -95,8 +140,65 @@
                 var j = document.getElementById('principal');
                     j.setAttribute('src', i.getAttribute('src'));
         
-        });
+        });*/
+
         
+
+            function tobilleras(e) {
+            
+            if (e == null) {
+           
+            document.getElementById('principal').src = 'images/pruebaTobilleras.jpeg';
+            }
+            }
+
+            function serpienteBeigue(e) {
+            
+            if (e == null) {
+           
+            document.getElementById('principal').src = 'images/animal_print/PALAMARILLASERPIENTE.jpg';
+            }
+            }
+
+            function serpienteNegro(e) {
+            
+            if (e == null) {
+           
+            document.getElementById('principal').src = 'images/animal_print/PALANEGROSERPIENTE.jpg';
+            }
+            }
+
+            function serpiente(e) {
+            
+            if (e == null) {
+           
+            document.getElementById('principal').src = 'images/animal_print/PALAMORADASERPIENTE.jpg'
+            }
+            }
+
+            function leopardoBeigue(e) {
+            
+            if (e == null) {
+           
+            document.getElementById('principal').src = 'images/animal_print/LEOPALANEGRO.jpg'
+            }
+            }
+            function leopardoCuero(e) {
+            
+            if (e == null) {
+           
+            document.getElementById('principal').src = 'images/animal_print/LEOPALAMORADO.jpg'
+            }
+            }
+            function cebra(e) {
+            
+            if (e == null) {
+           
+            document.getElementById('principal').src = 'images/animal_print/PALANEGRACEBRA.jpg'
+            }
+            }
+
+            
             </script>
         
 </body>
